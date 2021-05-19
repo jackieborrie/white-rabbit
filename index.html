@@ -15,4 +15,42 @@
 <input  id="input" type="text" />
 	</body>
 </html>
+<html>
+	<head>
+		<title>My first app</title>
+		<style>
+			body {
+				background: black;
+				color: green;
+				font-family:monospace;
+				font-size: 14px;
+			}
+			input {
+				background: black;
+				color: green;
+				border: none;
+				outline: none;
+				font-family:monospace;
+			}
+		</style>
+<script>
+			alert("Hello World!");
+	</style>
+<script>
+	function beginGame(){
+			play = confirm("Do you want to play?");
+			if(play == true){
+				name = prompt("What's your name?", "Neo");
+document.getElementById("log").innerHTML =
+document.getElementById("log").innerHTML+name+"<br>";
+			}
+		}
+		</script>
+	</head>
+	<body onload="beginGame()">
+		<div id="log">
+		</div>
+		<input  id="input" type="text" />
+	</body>
+</html>
 
