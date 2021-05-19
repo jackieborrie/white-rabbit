@@ -55,6 +55,24 @@ document.getElementById("log").innerHTML+name+"<br>";
 		}
 
 		</script>
+</style>
+<script>
+	function beginGame(){
+			play = confirm("Do you want to play?");
+			if(play == true){
+				name = prompt("What's your name?", "Neo");
+writeText(“Wake up, “ + name);
+writeText("Follow the white rabbit.");
+writeText("Knock, knock, "+name);
+document.getElementById("input").focus();					document.getElementById("input").select();
+			}
+		}
+function writeText(name){
+			document.getElementById("log").innerHTML 
+document.getElementById("log").innerHTML+name+"<br>";
+		}
+
+		</script>
 
 
 </html>
