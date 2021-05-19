@@ -1,23 +1,6 @@
 <html>
 	<head>
 		<title>My first app</title>
-<script>
-			alert("Hello World!");
-			play = confirm("Do you want to play?");
-			if(play == true){
-				name = prompt("What's your name?", "Jackie");
-				alert("Hello "+name+"!")
-			}
-		</script>
-	</head>
-	<body>
-<div id="log"></div>
-<input  id="input" type="text" />
-	</body>
-</html>
-<html>
-	<head>
-		<title>My first app</title>
 		<style>
 			body {
 				background: black;
@@ -52,5 +35,24 @@ document.getElementById("log").innerHTML+name+"<br>";
 		</div>
 		<input  id="input" type="text" />
 	</body>
-</html>
 
+</style>
+<script>
+	function beginGame(){
+			play = confirm("Do you want to play?");
+			if(play == true){
+				name = prompt("What's your name?", "Neo");
+writeText(name);
+			}
+		}
+function writeText(name){
+			document.getElementById("log").innerHTML 
+document.getElementById("log").innerHTML+name+"<br>";
+		}
+
+		</script>
+	</head>
+	<body onload="beginGame()">
+		<div id="log">
+
+</html>
